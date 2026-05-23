@@ -1,0 +1,119 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 80px;
+
+    background-color: white;
+}
+
+/* LOGO */
+
+.logo h1{
+    color: #2e7d32;
+    font-size: 32px;
+}
+
+/* MENU */
+
+.menu a{
+    text-decoration: none;
+
+    color: #2e7d32;
+
+    margin-left: 30px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+
+.menu a:hover{
+    color: #1b5e20;
+}
+
+/* HERO */
+
+.hero{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 80px;
+}
+
+/* TEXTO */
+
+.hero-texto{
+    width: 50%;
+}
+
+.hero-texto h2{
+    font-size: 52px;
+
+    color: #1b5e20;
+
+    margin-bottom: 20px;
+}
+
+.hero-texto p{
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+/* BOTON */
+
+.btn{
+    display: inline-block;
+
+    background-color: #1b5e20;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #2e7d32;
+}
+
+/* IMAGEN */
+
+.hero-imagen{
+    width: 45%;
+}
+
+.hero-imagen img{
+    width: 100%;
+}
