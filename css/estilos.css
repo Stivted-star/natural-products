@@ -434,6 +434,62 @@ body{
     font-size: 18px;
 }
 /* ========================= */
+/* CATEGORÍAS - ESCRITORIO */
+/* ========================= */
+
+.categorias{
+    padding: 80px 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.titulo-seccion{
+    font-size: 36px;
+    color: #1b5e20;
+    margin-bottom: 40px;
+}
+
+.contenedor-categorias{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.card h3{
+    font-size: 22px;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+/* ========================= */
 /* RESPONSIVE */
 /* ========================= */
 img{
@@ -546,9 +602,25 @@ img{
 
     /* CATEGORIAS */
 
-    .card{
+    .categorias{
+        padding: 50px 20px;
+    }
 
-    width: 300px;
+    .contenedor-categorias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .titulo-seccion{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .card{
+    width: 100%;
+    max-width: 320px;
 
     background-color: white;
 
@@ -566,6 +638,22 @@ img{
 
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
+    
+    /* FOOTER */
+    .footer-contenido{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0 20px 30px;
+    }
+
+    .footer-logo p{
+        max-width: 320px;
+    }
+
+    .footer-links{
+        align-items: center;
+    }
 
 }
 
@@ -576,4 +664,62 @@ img{
     font-weight: bold;
     border-bottom: 2px solid #1b5e20;
     padding-bottom: 5px;
+}
+/* ========================= */
+/* FOOTER LIMPIO */
+/* ========================= */
+
+.footer{
+    background-color: #1b5e20;
+    color: white;
+    padding-top: 40px;
+}
+
+.footer-contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 40px 30px;
+}
+
+.footer-logo h3{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p{
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #c8e6c9;
+}
+
+.footer-copy{
+    text-align: center;
+    background-color: #145214;
+    padding: 15px;
+    font-size: 14px;
 }
